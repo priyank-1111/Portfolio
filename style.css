@@ -12,6 +12,7 @@ body {
 
 header {
   background-color: #d6afd3;
+  min-height: 100vh;
   height: 100vh;
 }
 
@@ -698,11 +699,5 @@ header {
 
   .contact-content {
     width: 100%;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 500px) {
-  .header {
-    height: 90vmax;
   }
 }
