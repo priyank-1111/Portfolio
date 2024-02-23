@@ -1,311 +1,496 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./portfolio.png" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="./portfolio.png">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Priyank Choudhary</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Priyank_Resume.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#my-works">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-me">Contact</a>
-          </li>
-        </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Priyank Choudhary</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Priyank_Resume.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-works">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  
-  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary"  id="home">
-    <div class="col-lg-6 px-0">
-      <p class="lead my-3">Hi there! , I'm</p>
-      <h1 class="display-4 fst-italic">PRIYANK CHOUDHARY</h1>
-      <p>Frontend developer.</p>
-        <a href="./Priyank_Resume.pdf" target="_blank" download="" class="btn btn-outline-light">Download CV</a>
+    </nav>
+<section id="home">
+    <div
+      class="p-4 p-md-5 mb-4 rounded text-body-emphasis  container" 
+    >
+      <div class="col-lg-6 px-0">
+        <p class="lead my-3">Hi there! , I'm</p>
+        <h1 class="display-4 fst-italic">PRIYANK CHOUDHARY</h1>
+        <p>Frontend developer.</p>
+        <a
+          href="./Priyank_Resume.pdf"
+          target="_blank"
+          download=""
+          class="btn btn-outline-light"
+          >Download CV</a
+        >
         <a href="#my-works" class="btn btn-outline-light">Portfolio</a>
-        <div >
-
+        <div>
           <a href="" target="blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/priyank-1111" target="blank"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/priyank-1111" target="blank"
+            ><i class="fab fa-github"></i
+          ></a>
           <a href="" target="blank"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="angle-down-icon">
           <a href="#about"><i class="fas fa-angle-down"></i></a>
         </div>
-    </div>
-  </div>
-  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary"  id="about">
-    <div class="col-lg-6 px-0">
-      <h1 class="display-4 fst-italic">About me</h1>
-      <p class="lead my-3">priyankchoudhary1111@gmail.com</p>
-      <p>
-        Hello there! I'm Priyank, a 22-year-old graduated with a B.Tech in Computer Science from Graphic Era University in 2023.
-        I have a passion for problem-solving and a flair for crafting intuitive and visually appealing designs. From tackling complex challenges to creating user-friendly interfaces, I thrive on blending functionality with aesthetics.
-        My thirst for knowledge knows no bounds—I'm constantly seeking out opportunities to expand my skill set and delve into new technologies. The more I learn, the more inspired I become.
-      </p>
-    </div>
-  </div>
-  <div class="row align-items-md-stretch">
-    <h1>Education and experience</h1>
-    <div class="col-md-6">
-      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-        <h2>Experience</h2>
-        <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-        <button class="btn btn-outline-secondary" type="button">Example button</button>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-        <h2>Education</h2>
-        <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-        <button class="btn btn-outline-secondary" type="button">Example button</button>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="h-100 p-5 text-bg-dark rounded-3">
-        <h2>Hobbies</h2>
-        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-        <button class="btn btn-outline-light" type="button">Example button</button>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="h-100 p-5 text-bg-dark rounded-3">
-        <h2>Contacts</h2>
-        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-        <button class="btn btn-outline-light" type="button">Example button</button>
-      </div>
-    </div>
-  </div>
-<div class="d-flex gap-2 justify-content-center py-5">
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Html
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">css
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Javascript
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">React
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Wordpress
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">C++
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Python
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-pill">
-    <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Dark
-  </span>
-</div>
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+  </section>
+  <section id="about">
+    <div
+      class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary container"
+      
+    >
+      <div class="col-lg-6 px-0">
+        <h1 class="display-4 fst-italic">About me</h1>
+        <p class="lead my-3">priyankchoudhary1111@gmail.com</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          Hello there! I'm Priyank, a 22-year-old graduated with a B.Tech in
+          Computer Science from Graphic Era University in 2023. I have a passion
+          for problem-solving and a flair for crafting intuitive and visually
+          appealing designs. From tackling complex challenges to creating
+          user-friendly interfaces, I thrive on blending functionality with
+          aesthetics. My thirst for knowledge knows no bounds—I'm constantly
+          seeking out opportunities to expand my skill set and delve into new
+          technologies. The more I learn, the more inspired I become.
         </p>
       </div>
     </div>
   </section>
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <section id="my-works">
-    <div class="portfolio">
-      <div class="proj-heading">
-        <h1>Portfolio</h1>
-      </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-          <img src="https://i.postimg.cc/qM9TjGTG/Screenshot-80.png">
-          <div class="proj1-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <h2>Restaurant Website UI</h2>
-            <p>Build Using HTML,CSS,JS</p>
-            <button><a href="" target="blank">View source <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-          </div>
-        </div>
-
-        <div class="proj-2">
-          <img src="https://i.postimg.cc/FR848bSm/Screenshot-76.png">
-          <div class="proj2-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <h2>Profile Card</h2>
-            <p>Build Using HTML,CSS</p>
-            <button><a href="" target="blank">View source <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="" target="blank">Try it Live <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-          </div>
-
-        </div>
-        <div class="more-work">
+  <section id="education">
+    <div class="row m-auto p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary container">
+      <h1>Education and experience</h1>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Experience</h2>
           <p>
-            More
+            Or, keep it light and add a border for some added definition to the
+            boundaries of your content. Be sure to look under the hood at the
+            source HTML here as we've adjusted the alignment and sizing of both
+            column's content for equal-height.
           </p>
-          <a href="" target="blank">CodePen</a>
+          <button class="btn btn-outline-secondary" type="button">
+            Example button
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Education</h2>
+          <p>
+            Or, keep it light and add a border for some added definition to the
+            boundaries of your content. Be sure to look under the hood at the
+            source HTML here as we've adjusted the alignment and sizing of both
+            column's content for equal-height.
+          </p>
+          <button class="btn btn-outline-secondary" type="button">
+            Example button
+          </button>
         </div>
       </div>
     </div>
-  </section> -->
-  <div class="contact" id="contact-me">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i>  <a href="https://www.priyankchoudhary1111@gmail.com" target="blank">priyankchoudhary1111@gmail.com</a>
-        </p>
-        <p class="links">Or find me on:</p>
-        <a href="" target="blank"><i class="fab fa-linkedin">
-            Linkedin</i></a>
-        <a href="https://github.com/priyank-1111" target="blank"><i class="fab fa-github"></i> Github</a>
-        <a href="" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+  
+    <div class="d-flex gap-2 justify-content-center py-5 container">
+      <div class="card" style="width: 10rem;">
+        <img src="..." class="card-img-top" alt="...">
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="..." class="card-img-top" alt="...">
+
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="..." class="card-img-top" alt="...">
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="..." class="card-img-top" alt="...">
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="..." class="card-img-top" alt="...">
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="..." class="card-img-top" alt="...">
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="..." class="card-img-top" alt="...">
       </div>
     </div>
-  </div>
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2024</p>
-  </footer>
-  <!-- <script src="./app.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </section>
+<section id="project">
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact-me">
+    <div class="row m-auto p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary container">
+      <div class="col-md-5">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Hobbies</h2>
+          <div class="row">
+           <div class="col-md-3">
+            <img src="./plane.svg" width="50">
+            <p>Travel</p>
+           </div>
+           <div class="col-md-3">
+            <img src="./gym.svg" width="50">
+            <p>Gym</p>
+           </div>
+           <div class="col-md-3">
+            <img src="./photograph.svg" width="50">
+            <p>photography</p>
+           </div>
+           <div class="col-md-3">
+            <img src="./game.svg" width="50">
+            <p>sports</p>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Contact Me</h2>
+          <p class="mail">
+            Get in touch with me <i class="fas fa-arrow-right"></i>
+            <a href="https://www.priyankchoudhary1111@gmail.com" target="blank"
+              >priyankchoudhary1111@gmail.com</a
+            >
+          </p>
+          <p class="links">Or find me on:</p>
+          <a href="" target="blank"><i class="fab fa-linkedin"> Linkedin</i></a>
+          <a href="https://github.com/priyank-1111" target="blank"
+            ><i class="fab fa-github"></i> Github</a
+          >
+          <a href="" target="blank"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <footer class="bg-dark text-light p-4">
+      <div class="footer container bg-dark">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2024</p>
+      </div>
+    </footer>
+    <!-- <script src="./app.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
