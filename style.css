@@ -9,7 +9,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+nav {
+  box-shadow: 0px 0px 7px 8px #121212;
+  background-color: #121212;
+}
 li{
   list-style: none;
 }
@@ -32,13 +35,19 @@ a.nav-link {
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show ,.navbar-nav .nav-link:hover{
   color: #dddddd;
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: rgb(255 172 172) !important;
+}
 #home{
   background-image: url('./home.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
-
+#about{
+  min-height: 100vh;
+  background-color: rgb(214, 214, 190);
+}
 .footer p{
   margin: 0;
 }
