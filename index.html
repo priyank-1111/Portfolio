@@ -69,6 +69,9 @@
     >
       <div class="col-lg-6 px-0">
         <p class="lead my-3">Hi there! , I'm</p>
+        <div class="brand-heading">
+          <span class="txt-rotate" data-period="100" data-rotate='[ "Hello,", "Olá,", "Hallo,", "Salut,", "Ciao,", "Hola,", "Hej," ]'>helll</span>
+        </div>
         <h1 class="display-4 fst-italic">PRIYANK CHOUDHARY</h1>
         <p>Frontend developer.</p>
         <a
@@ -86,9 +89,18 @@
           ></a>
           <a href="" target="blank"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="angle-down-icon">
+        <!-- start mouse wrap -->
+						<div class="mouse-warp">
+							<a href="#about" class="page-scroll">
+								<div class="mouse">
+									<div class="scroll"></div>
+								</div>
+							</a>
+						</div>
+						<!-- end mouse wrap -->
+        <!-- <div class="angle-down-icon">
           <a href="#about"><i class="fas fa-angle-down"></i></a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -115,48 +127,135 @@
   <section id="education">
     <div class="row m-auto p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary container">
       <h1>Education and experience</h1>
-      <div class="col-md-6">
-        <div class="p-4 bg-body-tertiary border rounded-3">
-          <h2>Experience</h2>
-          <p>
-            Embarking on a four-month internship at Netoyed, I immersed myself in HTML, CSS, JavaScript, and WordPress
-            with Elementor. Transitioning into a full-time role, I honed my frontend skills, crafting captivating websites
-            across diverse industries. Collaborating closely with teams, I transformed design concepts into pixel-perfect
-            realities, ensuring seamless user experiences. From e-commerce platforms to corporate portals, each project
-            presented unique challenges, fueling my passion for innovation. Throughout this journey, I embraced emerging
-            technologies and trends, constantly pushing boundaries and refining my craft. My internship laid the
-            foundation for a fulfilling career, providing invaluable experience and mentorship. As I continue to evolve in
-            web development, I remain committed to creating immersive digital experiences and contributing to the dynamic
-            landscape of frontend development.
-          </p>
+      <div class="col-md-6 timeline col-exp">
+        <div class="timeline-year">
+          <time datetime="2016">2016</time>
+          <div class="timeline-experience">
+            <span class="timeline-circle"></span>
+            <div class="timeline-experience-img"><img src="http://marinamarques.pt/img/bnp_paribas.png" alt="BNP Paribas"></div>
+            <div class="timeline-experience-info clear-after">
+              <h5>BNP Paribas</h5>
+              <div class="timeline-role">Team Manager & Front End Developer</div>
+              <p>January 2016 - Present</p>
+            </div>
+            <!-- experience-info -->
+          </div>
+          <!-- experience -->
+          <time datetime="2015">2015</time>
+          <div class="timeline-experience">
+            <span class="timeline-circle"></span>
+            <div class="timeline-experience-img"><img src="http://marinamarques.pt/img/bnp_paribas.png" alt="BNP Paribas"></div>
+            <div class="timeline-experience-info clear-after">
+              <h5>BNP Paribas</h5>
+              <div class="timeline-role">Jr. Front End Developer & Content Administrator</div>
+              <p>May 2015 - December 2015</p>
+            </div>
+            <!-- experience-info -->
+          </div>
+          <!-- experience -->
         </div>
+        <!-- year -->
+        <div class="timeline-year timeline-year1">
+          <time datetime="2014">2014</time>
+          <div class="timeline-experience">
+            <span class="timeline-circle"></span>
+            <div class="timeline-experience-img"><img src="http://marinamarques.pt/img/paginas_amarelas.png" alt="Páginas Amarelas"></div>
+            <div class="timeline-experience-info clear-after">
+              <h5>Páginas Amarelas</h5>
+              <div class="timeline-role">Internal Communication Technician</div>
+              <p>March 2014 - May 2015</p>
+            </div>
+            <!-- experience-info -->
+          </div>
+          <!-- experience -->
+          <time datetime="2013">2013</time>
+          <div class="timeline-experience">
+            <span class="timeline-circle"></span>
+            <div class="timeline-experience-img"><img src="http://marinamarques.pt/img/paginas_amarelas.png" alt="Páginas Amarelas"></div>
+            <div class="timeline-experience-info clear-after">
+              <h5>Páginas Amarelas</h5>
+              <div class="timeline-role">Jr. Web Developer & Content Producer</div>
+              <p>February 2013 - March 2014</p>
+            </div>
+            <!-- experience-info -->
+          </div>
+          <!-- experience -->
+        </div>
+        <!-- year -->
       </div>
       <div class="col-md-6">
-        <div class="d-flex flex-wrap gap-2 justify-content-center py-5 container">
-          <div class="card" style="width: 10rem;">
-            <img src="..." class="card-img-top" alt="...">
-          </div>
-          <div class="card" style="width: 10rem;">
-            <img src="..." class="card-img-top" alt="...">
-  
-          </div>
-          <div class="card" style="width: 10rem;">
-            <img src="..." class="card-img-top" alt="...">
-          </div>
-          <div class="card" style="width: 10rem;">
-            <img src="..." class="card-img-top" alt="...">
-          </div>
-          <div class="card" style="width: 10rem;">
-            <img src="..." class="card-img-top" alt="...">
-          </div>
-          <div class="card" style="width: 10rem;">
-            <img src="..." class="card-img-top" alt="...">
-          </div>
-          <div class="card" style="width: 10rem;">
-            <img src="..." class="card-img-top" alt="...">
-          </div>
-        </div>
-        
+        <div class="skills-section">
+          <div class="skills-header">
+           <h1>Skills</h1>   
+           </div>
+           <div class="skills-container">
+             
+            <div class="skills-box">
+             <div class="skills-title">
+             <div class="skills-img">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png"     alt="" class="skills-icons">
+              </div>
+               <h3>HTML 5</h3>
+              </div>
+              <P> Lorem  Lorem  Lorem  </P>
+             </div>
+             
+             
+              <div class="skills-box">
+             <div class="skills-title">
+             <div class="skills-img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="" class="skills-icons">
+              </div>
+              <h3>CSS3</h3>
+              </div>
+              <P> Lorem  Lorem  Lorem  </P>   
+             </div>
+             
+             
+              <div class="skills-box">
+             <div class="skills-title">
+             <div class="skills-img">
+              <img src="https://icon-library.net/images/javascript-icon-png/javascript-icon-png-23.jpg" alt="" class="skills-icons">
+              </div>
+              <h3>JAVASCRIPT</h3>
+              </div>
+              <P> Lorem  Lorem  Lorem  </P>
+             </div>
+             
+                <div class="skills-box">
+             <div class="skills-title">
+             <div class="skills-img">
+              <img src="http://pluspng.com/img-png/nodejs-logo-png-nice-images-collection-node-js-desktop-wallpapers-370.png" alt="" class="skills-icons">
+              </div>
+              <h3>NODE.JS</h3>
+              </div>
+              <P> Lorem  Lorem  Lorem  </P>
+             </div>
+             
+                <div class="skills-box">
+             <div class="skills-title">
+             <div class="skills-img">
+              <img src="https://mildaintrainings.com/wp-content/uploads/2017/11/react-logo.png" alt="" class="skills-icons">
+              </div>
+              <h3>REACT</h3>
+              </div>
+              <P> Lorem  Lorem  Lorem  </P>
+             </div>
+             
+                <div class="skills-box">
+             <div class="skills-title">
+             <div class="skills-img">
+              <img src="https://javascriptforwp.com/wp-content/uploads/2019/03/badge-gatsby.png" alt="" class="skills-icons">
+              </div>
+              <h3>GATSBY.JS</h3>
+              </div>
+              <P> Lorem  Lorem  Lorem  </P>
+             </div>
+             
+             
+             </div>
+          
+           </div>
         <div class="p-4 bg-body-tertiary border rounded-3">
           <h2>Education</h2>
           <p>
@@ -201,6 +300,12 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
+                <ul class="portfolio-tags">
+                  <li class="portfolio-tag">HTML5 / CSS3</li>
+                  <li class="portfolio-tag">BOOTSTRAP</li>
+                  <li class="portfolio-tag">JAVASCRIPT</li>
+                  <li class="portfolio-tag">SEO</li>
+                </ul>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button
