@@ -10,8 +10,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 nav {
-  box-shadow: 0px 0px 7px 8px #121212;
-  background-color: #121212;
+  background-color: #121212ae;
+  backdrop-filter: blur(10px);
 }
 li{
   list-style: none;
