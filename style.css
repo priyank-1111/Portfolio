@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+	--bg-color: #212529;
+	--txt-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +22,11 @@ li{
   list-style: none;
 }
 a{
-  color: #fff;
+  color:var(--txt-color);
   text-decoration: none;
 }
 a.navbar-brand {
-  color: #fff;
+  color: var(--txt-color);;
   font-size: 30px;
 }
 a.navbar-brand:hover{
@@ -29,7 +34,7 @@ a.navbar-brand:hover{
 }
 a.nav-link {
   font-size: 18px;
-  color: #fff;
+  color: var(--txt-color);;
   text-decoration: none;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show ,.navbar-nav .nav-link:hover{
@@ -48,6 +53,15 @@ a.nav-link {
   height: 100vh;
   min-height: 500px;
 }
+#home .lead{
+	font-family: cursive;
+}
+#home .display-4{
+	font-family: sans-serif;
+    font-size: 50px;
+    color: #ffebeb;
+    margin: 20px 0 10px;
+}
 #home .bttn{
 	border-radius: 12px;
     font-size: large;
@@ -58,7 +72,34 @@ a.nav-link {
 #about{
 	height: 100vh;
     min-height: 450px;
-  background-color: rgb(214, 214, 190);
+  	background-color: rgb(84, 84, 84);
+	  color: var(--txt-color);;
+}
+#education{
+background-color: rgb(116, 116, 116);
+
+}
+#project{
+	background-color: rgb(55, 55, 55);
+
+}
+span.me {
+	display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: cursive;
+    border-bottom: 3px solid var(--txt-color);;
+	color: var(--txt-color);;
+	margin-bottom: 20px;
+}
+p.email{
+	font-size: 22px;
+    font-weight: 400;
+    font-family: monospace;
+}
+.about-content{
+	font-family: cursive;
+    font-size: 18px;
 }
 #contact-me{
 	border-bottom: 2px solid #121212;
@@ -76,10 +117,13 @@ a.nav-link {
 }
 .footer a{
   text-decoration: none;
-  color: #ffffff;
+  color: var(--txt-color);;
 }
 .portfolio-tags {
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	flex-wrap: wrap;
 }
 
 .portfolio-tag {
@@ -92,10 +136,11 @@ a.nav-link {
 	border: 2px solid #40E0D0;
 	padding: 3px;
 }
-.brand-heading {
-	font-size: 32px;
-	font-family: 'Montserrat', sans-serif;
-	color: #40E0D0;
+.txt-rotate > .wrap { border-right: 5px solid #5afff0 }
+.rotate {
+    font-size: 35px;
+    font-family: cursive;
+    color: #5afff0;
 }
 @media (min-width: 768px) {
 	.intro {
@@ -118,7 +163,7 @@ a.nav-link {
 .mouse {
 	width: 28px;
 	height: 60px;
-	border: 2px solid #ffffff;
+	border: 2px solid var(--txt-color);;
 	border-radius: 14px;
 }
 
@@ -126,7 +171,7 @@ a.nav-link {
 	width: 5px;
 	height: 5px;
 	border-radius: 2px;
-	background: #ffffff;
+	background: var(--txt-color);;
 	position: relative;
 	left: 10px;
 	-webkit-animation: scrolls 1.3s ease-out infinite;
@@ -199,7 +244,7 @@ a.nav-link {
 
 .text-timeline {
 	background: #40E0D0;
-	color: #fff;
+	color: var(--txt-color);;
 	font-size: 18px;
 	height: 40px;
 	padding: 0 25px;
@@ -223,7 +268,7 @@ a.nav-link {
 	-webkit-transform-origin: left;
 	transform-origin: left;
 	color: #40E0D0;
-	background: #fff;
+	background: var(--txt-color);;
 	text-align: center;
 }
 
@@ -266,7 +311,7 @@ a.nav-link {
 
 .timeline .timeline-experience-info .timeline-role {
 	font-size: 16px;
-	color: #008080;
+	color: rgb(90, 255, 240);
 	font-weight: 600;
 }
 
@@ -310,6 +355,7 @@ a.nav-link {
 /*/ end about work experience /*/
   .skills-container{
   display:flex;
+  justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -333,7 +379,7 @@ a.nav-link {
   height:90px;
   position: relative;
   border-radius: 45px;
-  background-color: #ffffff;
+  background-color: var(--txt-color);;
   display:flex;
   justify-content:center;
   align-items:center;
