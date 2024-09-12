@@ -2,7 +2,7 @@
 
 :root {
 	--bg-color: #212529;
-	--txt-white: #ffffff;
+	--txt-white: #dddddd;
 	--txt-primary: #40E0D0;
 }
 
@@ -55,9 +55,8 @@ a.nav-link {
   min-height: 500px;
 }
 #about{
-	height: 100vh;
-    min-height: 450px;
-	color: var(--txt-white);;
+    height: max(450px, 100vh);
+	color: #dddddd;
 	background-image: url('./about.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -104,14 +103,17 @@ span.me {
     font-size: 32px;
     font-weight: 600;
     font-family: cursive;
-    border-bottom: 3px solid var(--txt-white);;
-	color: var(--txt-white);;
+	color: var(--txt-white);
 	margin-bottom: 20px;
 }
 p.email{
 	font-size: 22px;
     font-weight: 400;
     font-family: monospace;
+}
+p.email a{
+	color: var(--txt-white);
+	text-decoration: none;
 }
 .about-content{
 	font-family: cursive;
@@ -120,11 +122,16 @@ p.email{
 #contact-me{
 	border-bottom: 2px solid #121212;
 }
+#contact-me p{
+	color:  var(--txt-white);
+	font-size: 18px;
+	margin-bottom: 5px;
+}
 #contact-me a{
 	text-decoration: none;
     color:  var(--txt-white);;
-    margin: 0 20px;
-    font-size: 20px;
+    margin: 0 5px;
+    font-size: 18px;
     cursor: pointer;
 
 }
@@ -305,9 +312,6 @@ p.email{
 	margin-top: 2%;
 }
 
-.col-exp {
-	margin-top: 2%;
-}
 
 .timeline .timeline-experience {
 	position: relative;
@@ -319,16 +323,15 @@ p.email{
 
 .timeline .timeline-experience-info h5 {
 	margin-top: 0;
-	margin-bottom: 0.333em;
-	font-size: 18px;
+	margin-bottom: 0.666em;
 	color: var(--txt-primary);;
 	font-weight: 700;
 }
 
 .timeline .timeline-experience-info .timeline-role {
-	font-size: 16px;
+	font-size: 15px;
 	color:  var(--txt-primary);;
-	font-weight: 600;
+	font-weight: 500;
 }
 .timeline time {
 	display: block;
@@ -389,7 +392,7 @@ p.email{
   height:90px;
   position: relative;
   border-radius: 45px;
-  background-color: #bbbbbb;
+  background-color: #292929;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -414,3 +417,49 @@ p.email{
 	color: #121212 !important;
 	background-color: #ffffff !important;
 }
+
+
+/* responsive */
+
+@media screen and (max-width: 990px) {
+	div#navbarTogglerDemo02{
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 12px;
+		right: 0;
+		top: 47px;
+		width: 200px;
+	}
+}
+@media screen and (max-width: 460px) {
+	a.navbar-brand {
+		font-size: 24px;
+	}
+	#home .display-4 {
+		font-size: 40px;
+		}
+		.rotate {
+			font-size: 24px;
+		}
+		span.me {
+			font-size: 28px;
+		}
+		.about-content {
+			font-size: 14px;
+		}
+		p.email {
+			font-size: 14px;
+		}
+		.timeline .timeline-experience {
+			padding-left: 40px;
+		}
+		.timeline .timeline-experience-info h5 {
+			font-size: 16px;
+		}
+		.timeline .timeline-experience-info p{
+			font-size: 14px;
+		}
+		.timeline .timeline-experience-info .timeline-role {
+			font-size: 14px;
+		}
+	}
