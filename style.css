@@ -144,7 +144,6 @@ p.email a{
 }
 .portfolio-tags {
 	display: flex;
-	justify-content: center;
 	gap: 5px;
 	flex-wrap: wrap;
 }
@@ -400,13 +399,14 @@ p.email a{
 
   .card-text{
 	margin:12px 0;
+	font-size: 14px;
   }
   .card.shadow-sm {
 	border: none;
     background-color: transparent;
     color: #ffffff;
     overflow: hidden;
-    box-shadow: 0px 0px 5px #5a5a5a !important;
+    box-shadow: 0px 0px 5px #9c9c9c !important;
 }
 .cardbtn{
 	color: #ffffff !important;
