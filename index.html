@@ -1,633 +1,471 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="./portfolio.png" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./portfolio.png" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top ">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between w-100">
-        <div><a class="navbar-brand" href="#">Priyank Choudhary</a></div>
-        <div class="position-relative">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link px-3 active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="./Priyank_Resume.pdf" target="_blank">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#project">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#contact-me">Contact</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">John Doe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <section id="home" class="position-relative text-white">
-    <div class="p-4 mb-4 container">
-      <div class="col-lg-6 px-0 d-flex flex-column justify-content-center gap-3" style="height: 90%;">
-        <div class="my-2">
-          <p class="lead my-1">Hi there! , I'm</p>
-          <h1 class="display-4">PRIYANK CHOUDHARY</h1>
-          <div class="rotate">
-            <span class="txt-rotate" data-period="500"
-              data-rotate='[ "Software Engineer", "Frontend Developer", "Web Developer", "Wordpress Developer"]'></span>
-          </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="avatar-circle animate__animated animate__fadeIn floating">PC</div>
+                    <h1
+                        class="display-4 fw-bold gradient-text mb-2 animate__animated animate__fadeIn animate__delay-1s">
+                        Priyank Choudhary</h1>
+                    <h2 class="h4 text-light mb-3 animate__animated animate__fadeIn animate__delay-2s">Full Stack
+                        Developer & UI/UX Designer</h2>
+                    <p class="lead text-light mb-4 animate__animated animate__fadeIn animate__delay-3s">I create
+                        beautiful, functional, and user-centered digital experiences that solve real-world problems.</p>
+                    <div
+                        class="d-flex justify-content-center gap-3 mb-5 animate__animated animate__fadeIn animate__delay-3s">
+                        <a href="#projects" class="btn btn-gradient">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light">Get In Touch</a>
+                    </div>
+                    <div class="social-icons mb-5 pb-5 animate__animated animate__fadeIn animate__delay-4s">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                    <div class="mouse-warp m-2">
+                        <a href="#about" class="page-scroll">
+                            <div class="mouse">
+                                <div class="scroll"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="my-2">
-          <a href="./Priyank_Resume.pdf" target="_blank" download="" class="btn btn-outline-light me-3 bttn">Download
-            CV</a>
-          <a href="#project" class="btn btn-outline-light bttn">Portfolio</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section bg-white" id="about">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">About Me</h2>
+            <p class="text-center section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                I'm a passionate developer with over 5 years of experience creating digital solutions
+                that make a difference. I love turning complex problems into simple, beautiful designs.
+            </p>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h3 class="fw-bold mb-4">My Journey</h3>
+                    <p class="mb-4">
+                        Started as a curious student learning HTML and CSS, I've evolved into a full-stack developer
+                        who enjoys every aspect of the development process – from initial concept to final deployment.
+                    </p>
+                    <p class="mb-4">
+                        I believe in continuous learning and staying up-to-date with the latest technologies.
+                        When I'm not coding, you'll find me exploring new frameworks, contributing to open source,
+                        or sharing knowledge with the developer community.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" data-aos="fade-right" data-aos-delay="100"><i
+                                class="bi bi-check-circle-fill text-primary me-2"></i> 5+ Years of Experience</li>
+                        <li class="mb-2" data-aos="fade-right" data-aos-delay="150"><i
+                                class="bi bi-check-circle-fill text-primary me-2"></i> 50+ Projects Completed</li>
+                        <li data-aos="fade-right" data-aos-delay="200"><i
+                                class="bi bi-check-circle-fill text-primary me-2"></i> Always Learning New Technologies
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-img-box">
+                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1470&auto=format&fit=crop"
+                            class="img-fluid" alt="About Illustration" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="row text-center g-4 mt-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="icon-box mx-auto">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Clean Code</h4>
+                        <p class="text-muted">Writing maintainable, scalable, and efficient code is my passion.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="icon-box mx-auto">
+                            <i class="bi bi-brush"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Creative Design</h4>
+                        <p class="text-muted">Blending aesthetics with functionality to create stunning user
+                            experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="icon-box mx-auto">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Responsive</h4>
+                        <p class="text-muted">Every project is designed to work seamlessly across all devices.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="icon-box mx-auto">
+                            <i class="bi bi-globe2"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Modern Web</h4>
+                        <p class="text-muted">Utilizing the latest technologies and best practices in web development.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="position-absolute bottom-0 my-5">
-        <a href="https://www.linkedin.com/in/priyank-choudhary-885296198/" target="blank"><i
-            class="fab fa-linkedin fa-lg p-2" style="color: #ffffff;"></i></a>
-        <a href="https://github.com/priyank-1111" target="blank"><i class="fab fa-github fa-lg p-2"
-            style="color: #ffffff;"></i></a>
-        <a href="" target="blank"><i class="fab fa-instagram fa-lg p-2" style="color: #ffffff;"></i></a>
-      </div>
-      <!-- start mouse wrap -->
-      <div class="mouse-warp position-absolute bottom-0 end-0 mx-5 my-3">
-        <a href="#about" class="page-scroll">
-          <div class="mouse">
-            <div class="scroll"></div>
-          </div>
-        </a>
-      </div>
-      <!-- end mouse wrap -->
-      <!-- <div class="angle-down-icon">
-          <a href="#about"><i class="fas fa-angle-down"></i></a>
-        </div> -->
-    </div>
-  </section>
-  <section id="about">
-    <div class="px-4 py-5 container h-100">
-      <div class="col-lg-6 px-0 d-flex flex-column justify-content-evenly h-100 gap-3">
-        <div class="about-head">
-          <span class="me">About me</span>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section d-flex align-items-center" id="process">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="text-center section-title" data-aos="fade-up">My Creative Process</h2>
+                    <p class="lead text-muted mb-5" data-aos="fade-up" data-aos-delay="100">Transforming ideas into
+                        impactful digital solutions, step by step.</p>
+
+                    <div class="position-relative">
+                        <div class="process-connector"></div>
+                        <div class="row g-4">
+                            <!-- Process Step 1 -->
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <h5 class="fw-bold mt-3">Discover</h5>
+                                    <p class="small text-muted">Deep dive into goals, target audience, and project
+                                        requirements through research and collaboration.</p>
+                                </div>
+                            </div>
+
+                            <!-- Process Step 2 -->
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <h5 class="fw-bold mt-3">Design</h5>
+                                    <p class="small">Craft intuitive wireframes and interactive prototypes focused on
+                                        user experience and brand identity.</p>
+                                </div>
+                            </div>
+
+                            <!-- Process Step 3 -->
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <h5 class="fw-bold mt-3">Develop</h5>
+                                    <p class="small">Write clean, scalable, and maintainable code to build fast,
+                                        responsive, and accessible digital products.</p>
+                                </div>
+                            </div>
+
+                            <!-- Process Step 4 -->
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <h5 class="fw-bold mt-3">Deliver</h5>
+                                    <p class="small">Test thoroughly, deploy confidently, and gather feedback for
+                                        continuous improvements post-launch.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="about-content">
-          As a passionate Software Engineer with a B.Tech in Computer Science from Graphic Era University, I'm dedicated
-          to crafting intuitive and visually appealing user interfaces. With a year of experience under my belt, my
-          ability to blend functionality with aesthetics is driven by a relentless pursuit of knowledge and a commitment
-          to delivering innovative solutions. I thrive on tackling complex challenges and creating seamless cross-device
-          experiences.
-        </p>
-        <div class="about-bottom">
-          <p class="email mb-2"><a href="mailto:priyankchoudhary1111@gmail.com">Email :
-              priyankchoudhary1111@gmail.com</a></p>
-          <p class="email mb-2"><a href="tel:+919759411119">Phone : +91-9759411119</a></p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section section" id="projects">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Featured Projects</h2>
+            <p class="text-center section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Here are some of my recent projects that showcase my skills and passion for creating
+                amazing digital experiences.
+            </p>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1470&auto=format&fit=crop"
+                            class="card-img-top" alt="E-Commerce">
+                        <div class="card-overlay">
+                            <a href="#" class="btn btn-light mb-3">View Project</a>
+                            <a href="#" class="btn btn-outline-light">View Code</a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold mb-3">E-Commerce Platform</h3>
+                            <p class="card-text text-muted mb-4">
+                                A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features
+                                include user authentication, payment processing, and admin dashboard.
+                            </p>
+                            <div class="mb-4">
+                                <span class="badge-tech">React</span>
+                                <span class="badge-tech">Node.js</span>
+                                <span class="badge-tech">MongoDB</span>
+                                <span class="badge-tech">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1470&auto=format&fit=crop"
+                            class="card-img-top" alt="Task App">
+                        <div class="card-overlay">
+                            <a href="#" class="btn btn-light mb-3">View Project</a>
+                            <a href="#" class="btn btn-outline-light">View Code</a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold mb-3">Task Management App</h3>
+                            <p class="card-text text-muted mb-4">
+                                A collaborative task management application with real-time updates, drag-and-drop
+                                functionality, and team collaboration features.
+                            </p>
+                            <div class="mb-4">
+                                <span class="badge-tech">Vue.js</span>
+                                <span class="badge-tech">Firebase</span>
+                                <span class="badge-tech">Vuetify</span>
+                                <span class="badge-tech">Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?q=80&w=1470&auto=format&fit=crop"
+                            class="card-img-top" alt="Weather">
+                        <div class="card-overlay">
+                            <a href="#" class="btn btn-light mb-3">View Project</a>
+                            <a href="#" class="btn btn-outline-light">View Code</a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold mb-3">Weather Dashboard</h3>
+                            <p class="card-text text-muted mb-4">
+                                A beautiful weather application with detailed forecasts, interactive maps, and
+                                personalized weather alerts using modern APIs.
+                            </p>
+                            <div class="mb-4">
+                                <span class="badge-tech">React</span>
+                                <span class="badge-tech">TypeScript</span>
+                                <span class="badge-tech">OpenWeather API</span>
+                                <span class="badge-tech">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1470&auto=format&fit=crop"
+                            class="card-img-top" alt="Portfolio">
+                        <div class="card-overlay">
+                            <a href="#" class="btn btn-light mb-3">View Project</a>
+                            <a href="#" class="btn btn-outline-light">View Code</a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold mb-3">Portfolio Website</h3>
+                            <p class="card-text text-muted mb-4">
+                                A responsive portfolio website showcasing modern design principles, smooth animations,
+                                and optimized performance.
+                            </p>
+                            <div class="mb-4">
+                                <span class="badge-tech">React</span>
+                                <span class="badge-tech">Tailwind CSS</span>
+                                <span class="badge-tech">Framer Motion</span>
+                                <span class="badge-tech">Vite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="education">
-    <div class="row m-auto py-5 container">
-      <div class="col-md-12">
-        <div class="skills-section">
-          <div class="skills-header">
-            <span class="me">Technical Skills</span>
-          </div>
-          <div class="skills-container mb-5">
+    </section>
 
-            <div class="skills-box">
-              <div class="skills-title">
-                <div class="skills-img">
-                  <img src="./html.png" alt="" class="skills-icons">
-                </div>
-                <h6>HTML 5</h6>
-              </div>
-            </div>
-            <div class="skills-box">
-              <div class="skills-title">
-                <div class="skills-img">
-                  <img src="./css.png" alt="" class="skills-icons">
-                </div>
-                <h6>CSS 3</h6>
-              </div>
-            </div>
-            <div class="skills-box">
-              <div class="skills-title">
-                <div class="skills-img">
-                  <img src="./js.png" alt="" class="skills-icons">
-                </div>
-                <h6>JAVASCRIPT</h6>
-              </div>
-            </div>
-            <div class="skills-box">
-              <div class="skills-title">
-                <div class="skills-img">
-                  <img src="./React-icon.png" alt="" class="skills-icons">
-                </div>
-                <h6>REACT</h6>
-              </div>
-            </div>
+    <!-- Contact Section -->
+    <section class="sectionContact bg-white" id="contact">
+        <div class="container">
+            <h2 class="text-center section-title" data-aos="fade-up">Let's Work Together</h2>
+            <p class="text-center section-subtitle" data-aos="fade-up" data-aos-delay="100">Have a project in mind? I’d
+                love to help bring it to life. Let’s build something impactful together.</p>
 
-            <div class="skills-box">
-              <div class="skills-title">
-                <div class="skills-img">
-                  <img src="./bootstrap.png" alt="" class="skills-icons">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="contact-card">
+                        <h3 class="fw-bold mb-4">Send Me a Message</h3>
+                        <form action="https://formsubmit.co/priyankchoudhary999@gmail.com" method="POST">
+                            <!-- Hidden settings -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+
+                            <!-- Form fields -->
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="firstName" class="form-control" placeholder="First Name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="lastName" class="form-control" placeholder="Last Name"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" rows="5"
+                                        placeholder="Type your message here..." required></textarea>
+                                </div>
+                                <div class="col-12 pt-3">
+                                    <button type="submit" class="btn btn-gradient w-100">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <h6>BOOTSTRAP</h6>
-              </div>
-            </div>
-            <div class="skills-box">
-              <div class="skills-title">
-                <div class="skills-img">
-                  <img src="./tailwind.png" alt="" class="skills-icons">
-                </div>
-                <h6>Tailwind CSS</h6>
-              </div>
-            </div>
 
-            <!-- <div class="skills-box">
-              <div class="skills-title">
-                <div class="skills-img">
-                  <img src="https://javascriptforwp.com/wp-content/uploads/2019/03/badge-gatsby.png" alt=""
-                    class="skills-icons">
-                </div>
-                <h6>GATSBY.JS</h6>
-              </div>
-            </div> -->
+                <!-- Contact Info + CTA -->
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="mb-4">
+                        <h3 class="fw-bold mb-3">Get In Touch</h3>
+                        <p class="text-muted">I'm always open to exciting opportunities and new challenges. Whether you
+                            have a question or just want to connect, feel free to reach out.</p>
+                    </div>
 
-
-          </div>
-
-        </div>
-      </div>
-      <div class="col-md-6 timeline mb-5">
-        <span class="me">Experience</span>
-        <div class="timeline-year">
-          <time datetime="2016">2024</time>
-          <div class="timeline-experience">
-            <span class="timeline-circle"></span>
-            <div class="timeline-experience-info clear-after">
-              <h5>Netoyed</h5>
-              <div class="timeline-role">Software Engineer SDE-1</div>
-              <p>September 2023 - Present</p>
-            </div>
-            <!-- experience-info -->
-          </div>
-          <!-- experience -->
-        </div>
-        <!-- year -->
-        <!-- <div class="timeline-year timeline-year1">
-          <time datetime="2014">2014</time>
-          <div class="timeline-experience">
-            <span class="timeline-circle"></span>
-
-            <div class="timeline-experience-info clear-after">
-              <h5>Páginas Amarelas</h5>
-              <div class="timeline-role">Internal Communication Technician</div>
-              <p>March 2014 - May 2015</p>
-            </div>
-          </div>
-          <time datetime="2013">2013</time>
-          <div class="timeline-experience">
-            <span class="timeline-circle"></span>
-
-            <div class="timeline-experience-info clear-after">
-              <h5>Páginas Amarelas</h5>
-              <div class="timeline-role">Jr. Web Developer & Content Producer</div>
-              <p>February 2013 - March 2014</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- year -->
-      </div>
-      <div class="col-md-6 timeline mb-5">
-        <span class="me">Education</span>
-        <div class="timeline-year">
-          <time datetime="2016">2023</time>
-          <div class="timeline-experience">
-            <span class="timeline-circle"></span>
-            <div class="timeline-experience-info clear-after">
-              <h5>B.tech (Computer Science)</h5>
-              <div class="timeline-role">Graphic Era University, Dehradun</div>
-              <p>2019 - 2023</p>
-            </div>
-            <!-- experience-info -->
-          </div>
-          <!-- experience -->
-          <time datetime="2015">2019</time>
-          <div class="timeline-experience">
-            <span class="timeline-circle"></span>
-            <div class="timeline-experience-info clear-after">
-              <h5>Senior Secondary (Science)</h5>
-              <div class="timeline-role">Maples Academy, Deoband</div>
-              <p>2017-2019</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-  </section>
-  <section id="project">
-    <div class="album py-5">
-      <div class="container p-4">
-        <span class="me">Projects</span>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Recruitment Portal</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">REACT</span>
-                  <span class="portfolio-tag">HTML5</span>
-                  <span class="portfolio-tag">CSS3</span>
-                </div>
-                <p class="card-text mt-0">
-                  Building interactive user interfaces using React for seamless web experiences.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <!-- <a href="#" type="button" target="_blank" class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a> -->
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Code
-                    </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Gov.in</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">ANGULAR</span>
-                  <span class="portfolio-tag">HTML</span>
-                  <span class="portfolio-tag">CSS</span>
-                  <span class="portfolio-tag">BOOTSTRAP</span>
-                </div>
-                <p class="card-text mt-0">
-                  A government app store, Gov.in provides access to government apps.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <!-- <a href="#" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a> -->
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                    class="btn btn-sm btn-outline-secondary cardbtn">
-                    View Code
-                  </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">National Book Trust</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">HTML</span>
-                  <span class="portfolio-tag">CSS</span>
-                  <span class="portfolio-tag">BOOTSTRAP</span>
-                  <span class="portfolio-tag">JAVASCRIPT</span>
-                </div>
-                <p class="card-text mt-0">
-                  Developed multiple event websites for NBT, ensuring responsive design.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://nbtindia.gov.in/" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
+                    <a class="nounderline" href="mailto:priyankchoudhary1111@gmail.com">
+                        <div class="gradient-card mb-4">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Email</h5>
+                                <p class="mb-0">priyankchoudhary1111@gmail.com</p>
+                            </div>
+                        </div>
                     </a>
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                    class="btn btn-sm btn-outline-secondary cardbtn">
-                    View Code
-                  </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Prime Food Distributor</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">HTML5</span>
-                  <span class="portfolio-tag">CSS3</span>
-                  <span class="portfolio-tag">SHOPIFY</span>
-                </div>
-                <p class="card-text mt-0">
-                  Responsive Shopify project showcasing food products with complete functionality.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://primefooddistributor.com/" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
+                    <a class="nounderline" href="tel:+919759411119">
+                        <div class="gradient-card mb-4">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Phone</h5>
+                                <p class="mb-0">+91 9759411119</p>
+                            </div>
+                        </div>
                     </a>
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                    class="btn btn-sm btn-outline-secondary cardbtn">
-                    View Code
-                  </a> -->
-                  </div>
+                    <div class="gradient-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Location</h5>
+                            <p class="mb-0">Noida, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Director General Telecom</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">WORDPRESS</span>
-                  <span class="portfolio-tag">ELEMENTOR</span>
-                </div>
-                <p class="card-text mt-0">
-                  Developed fully responsive LSA pages for the DGTelecom project.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://dgtelecom.gov.in/" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a>
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                    class="btn btn-sm btn-outline-secondary cardbtn">
-                    View Code
-                  </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-          
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Sidbivcf</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">HTML</span>
-                  <span class="portfolio-tag">CSS</span>
-                  <span class="portfolio-tag">BOOTSTRAP</span>
-                  <span class="portfolio-tag">JAVASCRIPT</span>
-                  <span class="portfolio-tag">CAKEP</span>
-                </div>
-                <p class="card-text mt-0">
-                  Dynamic website highlighting Sidbivcf's investment opportunities and services.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://sidbivcf.in/en" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a>
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                    class="btn btn-sm btn-outline-secondary cardbtn">
-                    View Code
-                  </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Casilica</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">HTML</span>
-                  <span class="portfolio-tag">CSS</span>
-                  <span class="portfolio-tag">BOOTSTRAP</span>
-                  <span class="portfolio-tag">JAVASCRIPT</span>
-                  <span class="portfolio-tag">LARAVEL</span>
-                </div>
-                <p class="card-text mt-0">
-                  Intuitive app providing comprehensive calculations for Casilica's products.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://casilica.com/casix/public" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a>
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                    class="btn btn-sm btn-outline-secondary cardbtn">
-                    View Code
-                  </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Netoyed Website</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">WORDPRESS</span>
-                  <span class="portfolio-tag">ELEMENTOR</span>
-                </div>
-                <p class="card-text mt-0">
-                  Professional and engaging WordPress site showcasing Netoyed's offerings.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://netoyed.com/" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a>
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                    class="btn btn-sm btn-outline-secondary cardbtn">
-                    View Code
-                  </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Shopper</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">REACT</span>
-                  <span class="portfolio-tag">HTML5</span>
-                  <span class="portfolio-tag">CSS3</span>
-                </div>
-                <p class="card-text mt-0">
-                  Feature-rich shopping web app with user-friendly interface with admin dashboard.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <!-- <a href="#home" type="button" class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a> -->
-                    <!-- <a href="https://github.com/priyank-1111/shopper" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Code
-                    </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Portfolio</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">HTML5</span>
-                  <span class="portfolio-tag">CSS3</span>
-                  <span class="portfolio-tag">BOOTSTRAP</span>
-                  <span class="portfolio-tag">JAVASCRIPT</span>
-                </div>
-                <p class="card-text mt-0">
-                  Modern portfolio showcasing, web development skills, and projects.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="#home" type="button" class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a>
-                    <!-- <a href="https://github.com/priyank-1111/Portfolio" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Code
-                    </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">SnakeGame</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">HTML5</span>
-                  <span class="portfolio-tag">CSS3</span>
-                  <span class="portfolio-tag">JAVASCRIPT</span>
-                </div>
-                <p class="card-text mt-0">
-                  Classic snake game with smooth controls and dynamic gameplay.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://priyank-1111.github.io/SnakeGame" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a>
-                    <!-- <a href="https://github.com/priyank-1111/SnakeGame" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Code
-                    </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h4 class="m-0">Tic-Tac-Toe</h4>
-                <div class="portfolio-tags my-2">
-                  <span class="portfolio-tag">HTML5</span>
-                  <span class="portfolio-tag">CSS3</span>
-                  <span class="portfolio-tag">JAVASCRIPT</span>
-                </div>
-                <p class="card-text mt-0">
-                  Simple Tic Tac Toe game with responsive and intuitive interface.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://priyank-1111.github.io/Tic-Tac-Toe" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Live
-                    </a>
-                    <!-- <a href="https://github.com/priyank-1111/Tic-Tac-Toe" target="_blank" type="button"
-                      class="btn btn-sm btn-outline-secondary cardbtn">
-                      View Code
-                    </a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact-me">
-    <div class="container py-4">
-      <span class="me">Contact Me</span>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <p class="mail ms-1">Get in touch with me
-            <i class="fas fa-arrow-right me-3"></i>
-            <a class="ms-0" href="mailto:priyankchoudhary1111@gmail.com"
-              target="blank">priyankchoudhary1111@gmail.com</a>
-          </p>
-        </div>
-        <div class="col-md-6 mb-2">
-          <div class="d-flex justify-content-end">
-            <div class="d-flex flex-wrap">
-              <p class="me-2 ms-1">Or find me on :</p>
-              <div class="d-flex gap-2">
-                <p><a href="https://www.linkedin.com/in/priyank-choudhary-885296198/" target="blank"><i
-                      class="fab fa-linkedin"></i> Linkedin</a></p>
-                <p><a href="https://github.com/priyank-1111" target="blank"><i class="fab fa-github"></i> Github</a></p>
-                <p><a href="https://www.instagram.com/priyank_.jaat?igsh=MXJicTE4cHJ1NXV4dw%3D%3D&utm_source=qr" target="blank"><i class="fab fa-instagram"></i> Instagram</a></p>
-              </div>
+            <!-- Footer -->
+            <div class="text-center footer mt-5 pt-4">
+                <p class="mb-0">© 2025 Priyank Choudhary. All rights reserved.</p>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-dark text-light p-2">
-    <div class="footer container bg-dark d-flex justify-content-between gap-3">
-      <p>Copyright © 2024 , Priyank Choudhary</p>
-      <p><a href="#">Back to top</a></p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add smooth transition when page loads
+        document.body.style.opacity = '0';
+        window.addEventListener('DOMContentLoaded', function () {
+            document.body.style.transition = 'opacity 0.5s ease';
+            document.body.style.opacity = '1';
+        });
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.querySelector('.card-overlay').style.opacity = '1';
+            });
+            card.addEventListener('mouseleave', function () {
+                this.querySelector('.card-overlay').style.opacity = '0';
+            });
+        });
+    </script>
 </body>
 
 </html>
